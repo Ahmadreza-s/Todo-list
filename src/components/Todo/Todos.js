@@ -1,7 +1,8 @@
 import React from 'react';
 import TodoItem from './TodoItem/TodoItem';
 
-const Todos = () => {
+const Todos = ({todos, onEditMode, onRemove, onClear}) => {
+
     return (
         <section>
             <h3>Todo List</h3>
@@ -10,4 +11,4 @@ const Todos = () => {
     );
 };
 
-export default Todos;
+export default React.memo(Todos, (prevProps, nextProps) => JSON.stringify(prevProps.todos) === JSON.stringify(nextProps.todos));
