@@ -4,7 +4,7 @@ import TodoItem from './TodoItem/TodoItem';
 const Todos = () => {
     return (
         <section>
-            <h2>Todo List</h2>
+            <h3>Todo List</h3>
             <TodoItem/>
         </section>
     );
