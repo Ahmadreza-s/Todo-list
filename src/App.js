@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {v4 as uuidv4} from 'uuid';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import TodoInput from './components/Todo/TodoInput/TodoInput';
 import Todos from './components/Todo/Todos';
 
@@ -17,42 +18,41 @@ function App() {
         }
     ]);
     const [editMode, setEditMode] = React.useState(false);
-    const [todo, setTodo] = React.useState({});
+    const [todoTitle, setTodoTitle] = React.useState('');
+    const [todoIdEdit, setTodoIdEdit] = React.useState(-1);
 
     const submitHandler = e => {
+        e.preventDefault();
         if (editMode) {
-            const todoIndex = todos.findIndex(c => c.id === todo.id);
+            const todoIndex = todos.findIndex(c => c.id === todoIdEdit);
             setTodos(tos => {
                 tos[todoIndex] = {
-                    id   : todo.id,
-                    title: todo.title
+                    id   : todoIdEdit,
+                    title: todoTitle
                 };
                 return tos;
             });
         }
         else {
-            setTodos(tos => tos.push({
-                id   : uuidv4(),
-                title: todo.title
-            }));
+            setTodos(prevState => {
+                const todoss = [...prevState];
+                todoss.unshift({
+                    id   : uuidv4(),
+                    title: todoTitle
+                });
+                return todoss;
+            });
         }
+        setTodoTitle('');
         setEditMode(false);
     };
 
-    const typeHandler = e => {
-        setTodo(prevState => {
-            return {
-                ...prevState,
-                title: e.target.value
-            };
-        });
-    };
+    const typeHandler = e => setTodoTitle(e.target.value);
+
     const setEditModeHandler = id => {
         setEditMode(true);
-        setTodo({
-            title: todos.filter(t => t.id === id)[0].title,
-            id
-        });
+        setTodoIdEdit(id);
+        setTodoTitle(todos.filter(t => t.id === id)[0].title);
     };
 
     const clearListHandler = () => setTodos([]);
@@ -67,7 +67,7 @@ function App() {
                     </h3>
                     <TodoInput onSubmit={submitHandler}
                                onChanged={typeHandler}
-                               todo={todo}/>
+                               todo={todoTitle}/>
                     <Todos onEditMode={setEditModeHandler}
                            onRemove={removeTodoHandler}
                            onClear={clearListHandler}
