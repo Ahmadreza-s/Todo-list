@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42576731-ec6c-4ece-8070-32570e5a3824" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Todo/TodoInput/TodoInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Todo/TodoItem/TodoItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Todo/Todos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../city-tours" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -73,22 +66,59 @@
       <updated>1585000789077</updated>
       <workItem from="1585000790493" duration="283000" />
       <workItem from="1585084168447" duration="118000" />
-      <workItem from="1585383980173" duration="1165000" />
+      <workItem from="1585383980173" duration="1999000" />
+      <workItem from="1585386529067" duration="18000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1585385212648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585385212648</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585384047566">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1585384047566" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1585385179522">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1585386594052">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585385179522" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585386594052" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1585386471572">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585386471572" />
+    <state width="1345" height="153" key="GridCell.Tab.0.bottom" timestamp="1585386476844">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585386476844" />
+    <state width="1345" height="153" key="GridCell.Tab.0.center" timestamp="1585386476843">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585386476843" />
+    <state width="1345" height="153" key="GridCell.Tab.0.left" timestamp="1585386476843">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585386476843" />
+    <state width="1345" height="153" key="GridCell.Tab.0.right" timestamp="1585386476843">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585386476843" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1585385295542">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585385295542" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1585384813504">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
