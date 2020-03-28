@@ -7,30 +7,27 @@ import TodoInput from './components/Todo/TodoInput/TodoInput';
 import Todos from './components/Todo/Todos';
 
 function App() {
-    const [todos, setTodos] = React.useState([
-        {
-            id   : uuidv4(),
-            title: 'wake up'
-        },
-        {
-            id   : uuidv4(),
-            title: 'take a shower'
-        }
-    ]);
+    const [todos, setTodos] = React.useState([]);
     const [editMode, setEditMode] = React.useState(false);
     const [todoTitle, setTodoTitle] = React.useState('');
     const [todoIdEdit, setTodoIdEdit] = React.useState(-1);
 
     const submitHandler = e => {
         e.preventDefault();
+        if (!todoTitle) {
+            alert('fill the blank');
+            return;
+        }
+
         if (editMode) {
             const todoIndex = todos.findIndex(c => c.id === todoIdEdit);
             setTodos(tos => {
-                tos[todoIndex] = {
+                const todoss = [...tos];
+                todoss[todoIndex] = {
                     id   : todoIdEdit,
                     title: todoTitle
                 };
-                return tos;
+                return todoss;
             });
         }
         else {
@@ -67,7 +64,8 @@ function App() {
                     </h3>
                     <TodoInput onSubmit={submitHandler}
                                onChanged={typeHandler}
-                               todo={todoTitle}/>
+                               todo={todoTitle}
+                               isEditMode={editMode}/>
                     <Todos onEditMode={setEditModeHandler}
                            onRemove={removeTodoHandler}
                            onClear={clearListHandler}
